@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+
+    <!-- Главный фрагмент -->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.app.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_to_intentsFragment"
+            app:destination="@id/intentsFragment" />
+        <action
+            android:id="@+id/action_to_foregroundServiceFragment"
+            app:destination="@id/foregroundServiceFragment" />
+        <action
+            android:id="@+id/action_to_broadcastReceiverFragment"
+            app:destination="@id/broadcastReceiverFragment" />
+        <action
+            android:id="@+id/action_to_contentProviderFragment"
+            app:destination="@id/contentProviderFragment" />
+    </fragment>
+
+    <!-- Фрагменты -->
+    <fragment
+        android:id="@+id/intentsFragment"
+        android:name="com.example.app.fragments.IntentsFragment"
+        android:label="IntentsFragment"
+        tools:layout="@layout/fragment_intents" />
+
+    <fragment
+        android:id="@+id/foregroundServiceFragment"
+        android:name="com.example.app.fragments.ForegroundServiceFragment"
+        android:label="ForegroundServiceFragment"
+        tools:layout="@layout/fragment_foreground_service" />
+
+    <fragment
+        android:id="@+id/broadcastReceiverFragment"
+        android:name="com.example.app.fragments.BroadcastReceiverFragment"
+        android:label="BroadcastReceiverFragment"
+        tools:layout="@layout/fragment_broadcast_receiver" />
+
+    <fragment
+        android:id="@+id/contentProviderFragment"
+        android:name="com.example.app.fragments.ContentProviderFragment"
+        android:label="ContentProviderFragment"
+        tools:layout="@layout/fragment_content_provider" />
+</navigation>
