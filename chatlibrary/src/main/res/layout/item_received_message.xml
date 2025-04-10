@@ -1,0 +1,11 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<data></data>
+    <TextView
+        android:id="@+id/textView"
+        android:background="#EEEEEE"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</layout>
